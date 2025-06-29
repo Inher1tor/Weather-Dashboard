@@ -1,24 +1,34 @@
-<DOCTYPE html4f>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:,">
 </head>
 <body>
-    <div id="container">
+    <div class="container">
         <h1>Weather Dashboard</h1>
         <div class="search">
-            <input type="text" id="cityInput" placeholder="Enter a city" />
+            <input type="text" id="locationInput" placeholder="Enter city or zip code..." />
             <button id="searchBtn">Search</button>
         </div>
-    </div>
-    <div id="currentWeather" class="weather-box">
-        <h2>5-day Forecast</h2>
+
+
+        <div id="currentWeather" class="weather-box"></div>
+        <h2>5-Day Forecast</h2>
         <div id="forecast" class="forecast-box"></div>
     </div>
-    <script type="module" src="script.js"></script>
+    <div class="unit-toggle">
+        <label for="unitSwitch">°C / °F:</label>
+        <select id="unitSwitch">
+            <option value="metric">°C</option>
+            <option value="imperial" selected>°F</option>
+        </select>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-</DOCTYPE>

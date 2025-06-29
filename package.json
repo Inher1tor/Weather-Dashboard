@@ -1,0 +1,22 @@
+{
+  "name": "weather-dashboard",
+  "version": "1.0.0",
+  "description": "Weather Dashboard",
+  "main": "script.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inher1tor/Weather-Dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inher1tor/Weather-Dashboard/issues"
+  },
+  "homepage": "https://github.com/Inher1tor/Weather-Dashboard#readme",
+  "devDependencies": {
+    "eslint": "^9.29.0"
+  }
+}
